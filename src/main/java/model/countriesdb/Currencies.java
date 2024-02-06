@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "EUR"
 })
 
-public class Currencies<Eur> {
+public class Currencies {
 
     @JsonProperty("EUR")
     private Eur eur;

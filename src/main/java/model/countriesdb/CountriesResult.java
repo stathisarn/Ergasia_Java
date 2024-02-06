@@ -10,13 +10,13 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.fasterxml.jackson.core.sym.Name;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "name",
     "currencies",
     "capital",
+    "languages",
     "population",
     "continents"
 })
@@ -29,6 +29,8 @@ public class CountriesResult {
     private Currencies currencies;
     @JsonProperty("capital")
     private List<String> capital;
+    @JsonProperty("languages")
+    private Languages languages;
     @JsonProperty("population")
     private Integer population;
     @JsonProperty("continents")
@@ -64,6 +66,16 @@ public class CountriesResult {
     @JsonProperty("capital")
     public void setCapital(List<String> capital) {
         this.capital = capital;
+    }
+
+    @JsonProperty("languages")
+    public Languages getLanguages() {
+        return languages;
+    }
+
+    @JsonProperty("languages")
+    public void setLanguages(Languages languages) {
+        this.languages = languages;
     }
 
     @JsonProperty("population")

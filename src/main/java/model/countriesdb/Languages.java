@@ -12,24 +12,63 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "spa"
+    "spa",
+    "cat",
+    "eus",
+    "glc"
 })
 
-public class NativeName {
+public class Languages {
 
     @JsonProperty("spa")
-    private Spa spa;
+    private String spa;
+    @JsonProperty("cat")
+    private String cat;
+    @JsonProperty("eus")
+    private String eus;
+    @JsonProperty("glc")
+    private String glc;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
     @JsonProperty("spa")
-    public Spa getSpa() {
+    public String getSpa() {
         return spa;
     }
 
     @JsonProperty("spa")
-    public void setSpa(Spa spa) {
+    public void setSpa(String spa) {
         this.spa = spa;
+    }
+
+    @JsonProperty("cat")
+    public String getCat() {
+        return cat;
+    }
+
+    @JsonProperty("cat")
+    public void setCat(String cat) {
+        this.cat = cat;
+    }
+
+    @JsonProperty("eus")
+    public String getEus() {
+        return eus;
+    }
+
+    @JsonProperty("eus")
+    public void setEus(String eus) {
+        this.eus = eus;
+    }
+
+    @JsonProperty("glc")
+    public String getGlc() {
+        return glc;
+    }
+
+    @JsonProperty("glc")
+    public void setGlc(String glc) {
+        this.glc = glc;
     }
 
     @JsonAnyGetter

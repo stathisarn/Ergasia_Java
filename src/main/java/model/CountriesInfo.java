@@ -1,62 +1,62 @@
 package model;
 
+import java.util.List;
 
-//class CountriesInfo and fields
 public class CountriesInfo {
-	private final String countryName;
-	private final String countryCapital;
-	private final String countryCurrencies;
-	private final String countryPopulation;
-	private final String countryContinents;
-	
-	
-	//constructors
-	public CountriesInfo(String countryName, String countryCapital, String countryCurrencies ,String countryPopulation, 
-			String countryContinents) {
-		this.countryName = countryName;
-		this.countryCapital = countryCapital;
-		this.countryCurrencies = countryCurrencies;
-		this.countryPopulation = countryPopulation;
-		this.countryContinents = countryContinents;
-	
-	}
-	
-	
-	//getters
-	public String getCoyntryName() {
-		return countryName;
-	}
-	
-	public String getCapital() {
-		return countryCapital;
-	}
-	
-	public String getCurrencies() {
-		return countryCurrencies;
-	}
-	
-	public String getPopulation() {
-		return countryPopulation;
-	}
-	
-	public String getContinents() {
-		return countryContinents;
-	}
+    private final String common;
+    private final String capital;
+    private final String currency;
+    private final String language;
+    private final long population;
+    private final List<String> continent;
+    
 
-	
-	
-	//text for output
-	@Override
-	public String toString() {
-		return "MovieInfo{" +
-	           "Name='" + countryName + "'\n" +
-			   ", Capital='" + countryCapital + "'\n" +
-	           ", Currency='" + countryCurrencies + "'\n" +
-			   ", Population='" + countryPopulation + "'\n" +
-			   ", Continent='" + countryContinents + "'\n" +
-	           '}';
-	}
+    public CountriesInfo(String common, String capital, String currency, String language, long population, List<String> continent) {
+        this.common = common;
+        this.capital = capital;
+        this.currency = currency;
+        this.language = language;
+        this.population = population;
+        this.continent = continent;
+        
+      
+    }
 
-	}
+    public String getCommon() {
+        return common;
+    }
+    
+    public String getCapital() {
+        return capital;
+    }
+    
+    public String getCurrency() {
+        return currency;
+    }
+    
+    public String getLanguage() {
+        return language;
+    }
+    
+    public long getPopulation() {
+        return population;
+    }
+    
+    public List<String> getContinent() {
+        return continent;
+    }
 
 
+
+    @Override
+    public String toString() {
+        return "Info{" +
+                "name='" + common + "'\n" +
+                ", capital='" + capital + "'\n" +
+                ", currency='" + currency + "'\n" +
+                ", language='" + language + "'\n" +
+                ", population='" + population + "'\n"+
+                ", continent='" + continent + "'\n" +
+                '}';
+    }
+}

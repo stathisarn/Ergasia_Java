@@ -35,5 +35,10 @@
    	<artifactId>newsExample</artifactId>
    	<version>0.0.1-SNAPSHOT</version>
    </dependency>
-  </dependencies>
+   <dependency>
+   	<groupId>gr.unipi</groupId>
+   	<artifactId>MovieAPI</artifactId>
+   	<version>0.0.1-SNAPSHOT</version>
+   </dependency>
+ </dependencies>
 </project>

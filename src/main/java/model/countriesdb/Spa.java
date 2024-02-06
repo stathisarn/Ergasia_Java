@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "common"
 })
 
-public class Ell {
+public class Spa {
 
     @JsonProperty("official")
     private String official;
