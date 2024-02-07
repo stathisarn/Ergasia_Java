@@ -80,5 +80,13 @@ public class Languages {
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
     }
+    
+    @JsonProperty("languages")
+    private Languages languages;
 
+    // Getter method for accessing the Languages object
+    public Languages getLanguages() {
+        return languages;
+    }
 }
+

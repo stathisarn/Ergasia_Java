@@ -1,8 +1,8 @@
-
 package model.countriesdb;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -14,7 +14,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "EUR"
 })
-
 public class Currencies {
 
     @JsonProperty("EUR")
@@ -41,5 +40,4 @@ public class Currencies {
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
     }
-
 }
